@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Input for city name -->
+    <EditText
+        android:id="@+id/city_input"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Enter city name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Button to trigger API call -->
+    <Button
+        android:id="@+id/get_weather_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Weather"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Display location -->
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: "
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Display temperature -->
+    <TextView
+        android:id="@+id/temp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: "
+        android:textSize="18sp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Display humidity -->
+    <TextView
+        android:id="@+id/humidity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity: "
+        android:textSize="18sp"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
